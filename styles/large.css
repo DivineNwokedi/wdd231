@@ -1,0 +1,44 @@
+/* large.css */
+@media (min-width: 768px) {
+  nav {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  #hamburgerBtn {
+    display: none;
+  }
+
+  nav a {
+    border: none;
+    padding: 1rem;
+  }
+
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  #courseCards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+
+  .social {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .about-wrapper {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .bio {
+    margin-left: 2rem;
+  }
+}

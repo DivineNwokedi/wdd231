@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Course homepage for WDD 231 Web Frontend Development I">
+  <meta name="author" content="Nwokedi">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 231 | Course Home Page</title>
+  <link rel="stylesheet" href="styles/normalise.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/large.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/course.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="branding">
+      <img src="images/logo.svg" alt="BYU-I Logo">
+      <span>Divine - Favour Nwokedi</span>
+    </div>
+    <button id="hamburgerBtn">☰</button>
+  </header>
+
+  <nav id="primaryNav">
+    <a href="index.html">Home</a>
+    <a href="chamber.html">Chamber</a>
+    <a href="final.html">Final</a>
+  </nav>
+
+  <main>
+    <section id="intro">
+      <h1>Home</h1>
+      <p>Welcome to my WDD 231 course homepage. This site showcases my frontend development skills.</p>
+    </section>
+
+    <section id="overview">
+      <h2>Overview</h2>
+      <p>This assignment demonstrates HTML, CSS, and JavaScript fundamentals.</p>
+    </section>
+    <section id="about">
+    <h2>About Me</h2>
+    <div class="about-wrapper">
+        <div class="image-box">
+        <img src="images/nwokedi.jpg" alt="Photo of Nwokedi">
+        </div>
+        <div class="bio">
+        <p>Hi, I'm Nwokedi—a frontend development student from Nigeria. I'm currently studying Web Frontend Development I at BYU-Idaho, where I'm learning to build responsive, accessible websites using HTML, CSS, and JavaScript.</p>
+        <p>I enjoy solving design challenges, exploring new technologies, and creating user-friendly digital experiences. This site showcases my journey and growth as a developer.</p>
+        </div>
+    </div>
+    </section>
+    <section id="courses">
+      <h2>Certificate Courses</h2>
+      <div id="courseCards"></div>
+      <div id="creditTotal"></div>
+      <div class="filters">
+        <button id="allBtn">All Courses</button>
+        <button id="wddBtn">WDD Courses</button>
+        <button id="cseBtn">CSE Courses</button>
+      </div>
+    </section>
+
+    <section id="resources">
+      <h2>Resources</h2>
+      <ul>
+        <li><a href="https://developer.mozilla.org/">MDN Web Docs</a></li>
+        <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+        <li><a href="https://javascript.info/">JavaScript Info</a></li>
+      </ul>
+    </section>
+  </main>
+    <footer>
+    <div class="social">
+        <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+        </a>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+        </a>
+    </div>
+    <p>&copy; <span id="year"></span> Nwokedi, Nigeria</p>
+    <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
