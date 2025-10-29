@@ -1,8 +1,9 @@
 const courses = [
   { code: "WDD 130", name: "Web Fundamentals", credits: 3, completed: true },
-  { code: "WDD 231", name: "Frontend Development I", credits: 3, completed: true },
-  { code: "WDD 331", name: "Frontend Development II", credits: 3, completed: false },
+  { code: "WDD 131", name: "Frontend Development I", credits: 3, completed: true },
+  { code: "WDD 231", name: "Frontend Development II", credits: 3, completed: false },
   { code: "CSE 110", name: "Programming Building Blocks", credits: 2, completed: true },
+  { code: "CSE 111", name: "Dynamic Web Fundamentals", credits: 3, completed: true },
   { code: "CSE 210", name: "Programming with Classes", credits: 4, completed: false }
 ];
 
