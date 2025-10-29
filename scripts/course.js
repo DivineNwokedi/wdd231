@@ -26,6 +26,7 @@ function renderCourses(filterFn) {
   creditTotal.textContent = `Total Credits: ${totalCredits}`;
 }
 
+
 document.getElementById("allBtn").onclick = () => renderCourses();
 document.getElementById("wddBtn").onclick = () => renderCourses(c => c.code.startsWith("WDD"));
 document.getElementById("cseBtn").onclick = () => renderCourses(c => c.code.startsWith("CSE"));
