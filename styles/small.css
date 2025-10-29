@@ -161,3 +161,6 @@ section h2 {
   text-align: left;
 }
 
+.fa-rotate-by {
+  transform: none !important;
+}
