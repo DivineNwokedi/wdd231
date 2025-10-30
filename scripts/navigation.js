@@ -1,6 +1,6 @@
-const hamburgerBtn = document.getElementById("hamburgerBtn");
-const nav = document.getElementById("primaryNav");
+const hamburgerBtn = document.getElementById('hamburgerBtn');
+const primaryNav = document.getElementById('primaryNav');
 
-hamburgerBtn.addEventListener("click", () => {
-  nav.classList.toggle("open");
+hamburgerBtn.addEventListener('click', () => {
+  primaryNav.classList.toggle('open');
 });

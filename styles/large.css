@@ -1,10 +1,10 @@
 /* large.css */
 @media (min-width: 768px) {
-  nav {
-    display: flex !important;
+  .about-wrapper {
     flex-direction: row;
-    justify-content: space-around;
-  }
+    align-items: center;
+  
+}
 
   #hamburgerBtn {
     display: none;
