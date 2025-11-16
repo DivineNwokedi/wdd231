@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Effurun Chamber of Commerce</title>
+  <link rel="stylesheet" href="styles/directory.css" />
+  <script src="scripts/home.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo-title">
+        <img src="images/logo.svg" alt="Effurun Chamber Logo" class="logo" />
+        <h1 class="site-title">The Vine Chamber of Commerce</h1>
+      </div>
+      <nav>
+        <button id="menu-toggle">☰</button>
+        <ul id="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero-image">
+    <img src="images/hero.webp" alt="Effurun Chamber Hero" />
+    <div class="hero-overlay">
+      <a href="join.html" class="cta">Join the Chamber</a>
+    </div>
+  </section>
+
+  <main>
+    <section class="events panel">
+      <h2>Upcoming Events</h2>
+      <ul>
+        <li><strong>Nov 20:</strong> Business Networking Night</li>
+        <li><strong>Nov 22:</strong> Local Market Expo</li>
+        <li><strong>Nov 25:</strong> Chamber Awards Gala</li>
+      </ul>
+    </section>
+
+    <section class="weather panel">
+      <h2>Current Weather</h2>
+      <p>Temperature: 84°F</p>
+      <p>Conditions: Partly Cloudy</p>
+      <div id="forecast">
+        <h3>3-Day Forecast</h3>
+        <ul>
+          <li>Sunday: 86°F</li>
+          <li>Monday: 88°F</li>
+          <li>Tuesday: 85°F</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="spotlights panel">
+      <h2>Member Spotlights</h2>
+      <div id="spotlight-container" class="grid-view"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-flex">
+      <!-- Left: Business Info -->
+      <div class="footer-left">
+        <h4>The Vine Chamberof Commerce</h4>
+        <p>123 Innovation Drive, Effurun</p>
+        <p>Phone: +234 801 234 5678</p>
+        <p><a href="https://deltatech.com" target="_blank">Visit Website</a></p>
+        <p>Membership Level: Gold</p>
+      </div>
+
+      <div class="footer-center">
+        <a href="#"><img src="images/facebook.png" alt="Facebook" /></a>
+        <a href="#"><img src="images/twitter.png" alt="Twitter" /></a>
+        <a href="#"><img src="images/linkedin.png" alt="LinkedIn" /></a>
+      </div>
+
+      <div class="footer-right">
+        <div class="personal-info">
+          <p>Frontend Developer & UI Designer</p>
+          <p>GitHub: <a href="https://github.com/DivineNwokedi">github.com/DivineNwokedi</a></p>
+          <p>LinkedIn: <a href="https://linkedin.com/in/divinenwokedi">linkedin.com/in/divinenwokedi</a></p>
+          <p>WD0231 Class Project | Divine</p>
+          <p>&copy; <span id="year"></span> | Last Modified: <span id="lastModified"></span></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
