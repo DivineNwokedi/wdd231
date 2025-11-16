@@ -3,30 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Directory of local businesses for the Chamber of Commerce project." />
-  <meta name="author" content="Divine" />
-  <title>The Vine Chamber of Commerce Directory</title>
-
-  <!-- Favicon -->
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
-
-  <!-- Facebook Meta Tags -->
-  <meta property="og:title" content="Chamber of Commerce Directory" />
-  <meta property="og:description" content="Explore local businesses in our Chamber of Commerce directory." />
-  <meta property="og:image" content="https://DivineNwokedi.github.io/images/social-preview.jpg" />
-  <meta property="og:url" content="https://DivineNwokedi.github.io/chamber/directory.html" />
-
-  <!-- Normalize CSS -->
+  <title>Chamber Directory</title>
   <link rel="stylesheet" href="styles/directory.css" />
-  <!-- Main CSS -->
-  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
   <header>
     <div class="header-container">
       <div class="logo-title">
-        <img src="images/logo.svg" alt="Chamber Logo" class="logo" />
-        <h1 class="site-title">Chamber of Commerce</h1>
+        <img src="images/logo.svg" alt="Logo" class="logo" />
+        <h1 class="site-title">The Vine Chamber of Commerce</h1>
       </div>
       <nav>
         <button id="menu-toggle">☰</button>
@@ -40,87 +25,86 @@
     </div>
   </header>
 
-  <!-- Hero Image Section -->
   <section class="hero-image">
-    <img src="images/hero.webp" alt="Timbuktu Chamber Hero Image" />
+    <img src="images/hero.webp" alt="Chamber Hero Image" />
     <div class="hero-overlay">
       <button class="cta">Keynote Tickets</button>
     </div>
   </section>
 
   <main>
-    <h2>Directory</h2>
+    <h2>Business Directory</h2>
+
     <div class="view-toggle">
-      <button id="grid-view">Grid View</button>
-      <button id="list-view">List View</button>
-    </div>
-    <section class="info-panels">
-    <div class="panel events">
-        <h3>Events</h3>
-        <ul>
-        <li><strong>10/21:</strong> 6pm – Chamber Mixer</li>
-        <li><strong>10/22:</strong> 8am – Ribbon Cutting</li>
-        <li><strong>10/23:</strong> 5pm – Keynote Speech</li>
-        </ul>
+      <button id="grid">Grid View</button>
+      <button id="list">List View</button>
     </div>
 
-    <div class="panel current-weather">
+    <div id="member-cards" class="grid-view"></div>
+
+    <section class="info-panels">
+      <div class="panel events">
+        <h3>Events</h3>
+        <ul>
+          <li><strong>10/21:</strong> 6pm – Chamber Mixer</li>
+          <li><strong>10/22:</strong> 8am – Ribbon Cutting</li>
+          <li><strong>10/23:</strong> 5pm – Keynote Speech</li>
+        </ul>
+      </div>
+
+      <div class="panel current-weather">
         <h3>Current Weather</h3>
         <img src="images/partly-cloudy.png" alt="Partly Cloudy" class="weather-icon" />
         <p>Temperature: 75°F</p>
-        <p>High: 82°F</p>
+        <p>High: 85°F</p>
         <p>Low: 52°F</p>
-        <p>Humidity: 60%</p>
+        <p>Humidity: 82%</p>
         <p>Sunrise: 7:30am</p>
-        <p>Sunset: 9:59pm</p>
-    </div>
+        <p>Sunset: 5:45pm</p>
+      </div>
 
-    <div class="panel forecast">
+      <div class="panel forecast">
         <h3>Weather Forecast</h3>
         <ul>
-        <li><strong>Today:</strong> 90°F</li>
-        <li><strong>Wednesday:</strong> 89°F</li>
-        <li><strong>Friday:</strong> 86°F</li>
+          <li><strong>Today:</strong> 90°F</li>
+          <li><strong>Wednesday:</strong> 89°F</li>
+          <li><strong>Thursday:</strong> 68°F</li>
         </ul>
-    </div>
+      </div>
     </section>
-    <section id="members-container" class="grid-view"></section>
   </main>
 
-    <footer>
+  <footer>
     <div class="footer-flex">
-        <!-- Left: Business Info -->
-        <div class="footer-left">
-        <p> </p>
-        <p> </p>
-        <p> </p>
-        <h4>The Vine Chamber of Commerce</h4>
-        <p>45 Sand Street, Effurun</p>
-        <p>Phone: +234 9071881851</p>
-        <p>Mail: nwokedidivine78@gamail.com</p>
-        </div>
+      <!-- Left: Business Info -->
+      <div class="footer-left">
+        <h4>The Vine Chamberof Commerce</h4>
+        <p>123 Innovation Drive, Effurun</p>
+        <p>Phone: +234 801 234 5678</p>
+        <p><a href="https://deltatech.com" target="_blank">Visit Website</a></p>
+        <p>Membership Level: Gold</p>
+      </div>
 
-        <!-- Center: Social Media Icons -->
-        <div class="footer-center">
+      <!-- Center: Social Media Icons -->
+      <div class="footer-center">
         <a href="#"><img src="images/facebook.png" alt="Facebook" /></a>
         <a href="#"><img src="images/twitter.png" alt="Twitter" /></a>
         <a href="#"><img src="images/linkedin.png" alt="LinkedIn" /></a>
-        </div>
+      </div>
 
-        <!-- Right: Chamber Info -->
-        <div class="footer-right">
-        <h4>Divine Nwokedi</h4>
-        <p>Frontend Developer & UI Designer</p>
-        <p>GitHub: <a href="https://github.com/DivineNwokedi" target="_blank">github.com/DivineNwokedi</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/divinenwokedi" target="_blank">linkedin.com/in/divinenwokedi</a></p>
+      <!-- Right: Personal Info -->
+      <div class="footer-right">
+        <div class="personal-info">
+          <p>Frontend Developer & UI Designer</p>
+          <p>GitHub: <a href="https://github.com/DivineNwokedi" target="_blank">github.com/DivineNwokedi</a></p>
+          <p>LinkedIn: <a href="https://linkedin.com/in/divinenwokedi" target="_blank">linkedin.com/in/divinenwokedi</a></p>
+          <p>WD0231 Class Project | Divine</p>
+          <p>&copy; <span id="year"></span> | Last Modified: <span id="lastModified"></span></p>
         </div>
+      </div>
     </div>
+  </footer>
 
-    <div class="footer-meta">
-        <p>WD0231 Class Project | Divine</p>
-        <p>&copy; <span id="year"></span> | Last Modified: <span id="lastModified"></span></p>
-    </div>
-    </footer>
-  <script src="scripts/directory.js"></script>
+  <script src="scripts/directory.js" defer></script>
 </body>
 </html>
