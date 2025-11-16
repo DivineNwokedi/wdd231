@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Delta Tech Solutions",
+    "address": "123 Innovation Drive, Effurun",
+    "phone": "+234 801 234 5678",
+    "website": "https://deltatech.com",
+    "image": "deltatech.png",
+    "membership": 3,
+    "description": "Leading provider of IT services in Delta State."
+  },
+  {
+    "name": "Green Market",
+    "address": "45 Eco Lane, Effurun",
+    "phone": "+234 802 345 6789",
+    "website": "https://greenmarket.ng",
+    "image": "greenmarket.png",
+    "membership": 2,
+    "description": "Organic produce and sustainable goods."
+  }
+]

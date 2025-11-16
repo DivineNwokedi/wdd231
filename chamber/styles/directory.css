@@ -1,0 +1,275 @@
+/* Base Reset */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header Layout */
+header {
+  background-color: #0a0243;
+  color: white;
+  padding: 1rem;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.site-title {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  align-items: center;
+}
+
+#nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+#nav-menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#nav-menu li a:hover {
+  text-decoration: underline;
+}
+
+#menu-toggle {
+  display: none; /* Hide toggle for desktop layout */
+}
+
+/* Hero Section */
+.hero {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.cta {
+  background-color: #ff9900;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Main Content */
+main {
+  padding: 1rem;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* View Toggle Buttons */
+.view-toggle {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.view-toggle button {
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #060243;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.view-toggle button:hover {
+  background-color: #0d0243;
+}
+
+/* Directory Layouts */
+.grid-view {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.list-view {
+  display: block;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+footer {
+  background-color: #003366;
+  color: white;
+  padding: 2rem 1rem;
+}
+
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-left h4 {
+  margin: 0 0 0.5rem;
+  font-size: 1.2rem;
+}
+
+.footer-left a,
+.footer-right a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-left a:hover,
+.footer-right a:hover {
+  text-decoration: underline;
+}
+
+.footer-center {
+  text-align: center;
+}
+
+.footer-center img {
+  width: 50px;
+  margin: 0 0.5rem;
+  vertical-align: middle;
+}
+
+.footer-meta {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+/* Responsive Navigation (Optional for Mobile) */
+@media screen and (max-width: 600px) {
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #nav-menu {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.hero-image {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.cta {
+  background-color: #ff9900;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+.info-panels {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.panel {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.panel h3 {
+  margin-top: 0;
+  color: #003366;
+}
+
+.panel ul {
+  list-style: none;
+  padding: 0;
+}
+
+.panel ul li {
+  margin-bottom: 0.5rem;
+}
+
+.weather-icon {
+  width: 50px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
