@@ -1,4 +1,4 @@
-// ✅ 1. Toggle Grid/List View
+// Toggle Grid/List View
 const gridButton = document.querySelector("#grid");
 const listButton = document.querySelector("#list");
 const display = document.querySelector("#member-cards");
@@ -13,7 +13,7 @@ listButton.addEventListener("click", () => {
   display.classList.remove("grid-view");
 });
 
-// ✅ 2. Fetch and Display Members
+// Fetch and Display Members
 const url = "data/members.json";
 
 async function getMembers() {
@@ -50,11 +50,11 @@ function displayMembers(members) {
 
 getMembers();
 
-// ✅ 3. Dynamic Footer Dates
+// Dynamic Footer Dates
 document.getElementById("year").textContent = new Date().getFullYear();
 document.getElementById("lastModified").textContent = document.lastModified;
 
-// ✅ 4. Mobile Navigation Toggle
+// Mobile Navigation Toggle
 const toggleButton = document.getElementById("menu-toggle");
 const navMenu = document.getElementById("nav-menu");
 
