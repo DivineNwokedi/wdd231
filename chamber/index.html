@@ -3,15 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Effurun Chamber of Commerce</title>
+  <meta name="description" content="Explore the comprehensive and ever-growing directory of The Vine Chamber of Commerce, where you can discover a wide variety of local member businesses that span across multiple industries and sectors. Whether you're looking for trusted service providers, innovative startups, established companies, or community-focused organizations, this directory is your go-to resource. Each listing includes essential contact details such as phone numbers, email addresses, and physical locations to help you connect directly with business representatives. You’ll also find links to official websites where you can learn more about each company’s mission, services, and offerings. Additionally, the directory highlights membership levels—such as Bronze, Silver, Gold, and Platinum—so you can see how actively involved each business is within the chamber community. This tool is designed to support networking, collaboration, and economic growth by making it easier for residents, visitors, and fellow entrepreneurs to engage with the vibrant business ecosystem of The Vine Chamber of Commerce." />
+  <meta name="author" content="Divine Nwokedi" />
+  <title>Home | Timbuktu Chamber of Commerce</title>
+  <link rel="icon" href="images/favicon.ico" />
+  <meta property="og:title" content="Directory | The Vine Chamber of Commerce" />
+  <meta property="og:description" content="Discover local businesses and members of The Vine Chamber of Commerce." />
+  <meta property="og:image" content="https://divinenwokedi.github.io/wdd231/chamber/images/hero.webp" />
+  <meta property="og:url" content="https://divinenwokedi.github.io/wdd231/chamber/directory.html" />
   <link rel="stylesheet" href="styles/directory.css" />
-  <script src="scripts/home.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap" rel="stylesheet" />
 </head>
 <body>
   <header>
     <div class="header-container">
       <div class="logo-title">
-        <img src="images/logo.svg" alt="Effurun Chamber Logo" class="logo" />
+        <img src="images/logo.svg" alt="Vine Chamber Logo" class="logo" />
         <h1 class="site-title">The Vine Chamber of Commerce</h1>
       </div>
       <nav>
@@ -19,7 +28,7 @@
         <ul id="nav-menu">
           <li><a href="index.html">Home</a></li>
           <li><a href="directory.html">Directory</a></li>
-          <li><a href="join.html">Join</a></li>
+          <li><a href="events.html">Events</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
@@ -45,29 +54,28 @@
 
     <section class="weather panel">
       <h2>Current Weather</h2>
-      <p>Temperature: 84°F</p>
-      <p>Conditions: Partly Cloudy</p>
+      <p id="temperature">Temperature: --°F</p>
+      <p id="conditions">Conditions: --</p>
       <div id="forecast">
         <h3>3-Day Forecast</h3>
-        <ul>
-          <li>Sunday: 86°F</li>
-          <li>Monday: 88°F</li>
-          <li>Tuesday: 85°F</li>
+        <ul id="forecast-list">
+          <!-- Forecast will be injected here -->
         </ul>
       </div>
     </section>
 
     <section class="spotlights panel">
       <h2>Member Spotlights</h2>
-      <div id="spotlight-container" class="grid-view"></div>
+      <div id="spotlight-container" class="grid-view">
+        <!-- Spotlight members will be injected here -->
+      </div>
     </section>
   </main>
 
   <footer>
     <div class="footer-flex">
-      <!-- Left: Business Info -->
       <div class="footer-left">
-        <h4>The Vine Chamberof Commerce</h4>
+        <h4>The Vine Chamber of Commerce</h4>
         <p>123 Innovation Drive, Effurun</p>
         <p>Phone: +234 801 234 5678</p>
         <p><a href="https://deltatech.com" target="_blank">Visit Website</a></p>
@@ -91,5 +99,6 @@
       </div>
     </div>
   </footer>
+  <script src="scripts/directory.js" defer></script>
 </body>
 </html>
