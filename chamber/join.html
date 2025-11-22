@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Apply to join The Vine Chamber of Commerce. Complete the membership form and explore membership levels with their benefits." />
+  <meta name="author" content="Divine Nwokedi" />
+  <title>Join | The Vine Chamber of Commerce</title>
+  <link rel="icon" href="images/favicon.ico" />
+  <meta property="og:title" content="Join | The Vine Chamber of Commerce" />
+  <meta property="og:description" content="Apply for membership and discover benefits of joining The Vine Chamber of Commerce." />
+  <meta property="og:image" content="https://divinenwokedi.github.io/wdd231/chamber/images/hero.webp" />
+  <meta property="og:url" content="https://divinenwokedi.github.io/wdd231/chamber/join.html" />
+  <link rel="stylesheet" href="styles/directory.css" />
+  <link rel="stylesheet" href="styles/normalise.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap" rel="stylesheet" />
+  <script>
+    // Auto-fill timestamp when page loads
+    window.addEventListener("DOMContentLoaded", () => {
+      document.getElementById("timestamp").value = new Date().toISOString();
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo-title">
+        <img src="images/logo.svg" alt="Vine Chamber Logo" class="logo" />
+        <h1 class="site-title">The Vine Chamber of Commerce</h1>
+      </div>
+      <nav>
+        <button id="menu-toggle">☰</button>
+        <ul id="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero-image">
+    <img src="images/hero.webp" alt="Join Chamber Hero" />
+    <div class="hero-overlay">
+      <h2>Become a Member Today</h2>
+    </div>
+  </section>
+
+  <main>
+    <section class="form-section panel">
+      <h2>Membership Application Form</h2>
+      <form method="get" action="thankyou.html">
+        <label>
+          First Name:
+          <input type="text" name="firstName" required autocomplete="given-name" title="First Name">
+        </label>
+
+        <label>
+          Last Name:
+          <input type="text" name="lastName" required autocomplete="family-name" title="Last Name">
+        </label>
+
+        <label>
+          Organizational Title:
+          <input type="text" name="orgTitle" autocomplete="organization-title" 
+                 title="Organizational Title" 
+                 pattern="[A-Za-z\\-\\s]{7,}">
+        </label>
+
+        <label>
+          Email:
+          <input type="email" name="email" required autocomplete="email" 
+                 placeholder="example@email.com" title="Email Address">
+        </label>
+
+        <label>
+          Mobile Phone:
+          <input type="tel" name="phone" required autocomplete="tel" title="Mobile Phone">
+        </label>
+
+        <label>
+          Organization Name:
+          <input type="text" name="organization" required autocomplete="organization" title="Organization Name">
+        </label>
+
+        <label>
+          Membership Level:
+          <select name="membership" required title="Membership Level">
+            <option value="np">NP Membership (Non-Profit)</option>
+            <option value="bronze">Bronze Membership</option>
+            <option value="silver">Silver Membership</option>
+            <option value="gold">Gold Membership</option>
+          </select>
+        </label>
+
+        <label>
+          Business Description:
+          <textarea name="description" title="Business Description"></textarea>
+        </label>
+
+        <input type="hidden" id="timestamp" name="timestamp">
+
+        <input type="submit" value="Apply for Membership">
+      </form>
+    </section>
+
+    <aside class="membership-cards panel">
+      <h2>Membership Levels</h2>
+      <div class="card np">
+        <h3>NP Membership</h3>
+        <a href="#npModal">Learn More</a>
+      </div>
+      <div class="card bronze">
+        <h3>Bronze Membership</h3>
+        <a href="#bronzeModal">Learn More</a>
+      </div>
+      <div class="card silver">
+        <h3>Silver Membership</h3>
+        <a href="#silverModal">Learn More</a>
+      </div>
+      <div class="card gold">
+        <h3>Gold Membership</h3>
+        <a href="#goldModal">Learn More</a>
+      </div>
+    </aside>
+
+    <!-- Modals -->
+    <div id="npModal" class="modal">
+      <div class="modal-content">
+        <h3>NP Membership Benefits</h3>
+        <p>No fee, access to community events, networking opportunities.</p>
+        <a href="#" class="close">Close</a>
+      </div>
+    </div>
+
+    <div id="bronzeModal" class="modal">
+      <div class="modal-content">
+        <h3>Bronze Membership Benefits</h3>
+        <p>Basic advertising, event discounts, and training sessions.</p>
+        <a href="#" class="close">Close</a>
+      </div>
+    </div>
+
+    <div id="silverModal" class="modal">
+      <div class="modal-content">
+        <h3>Silver Membership Benefits</h3>
+        <p>Spotlight positions on homepage, advanced training, larger event discounts.</p>
+        <a href="#" class="close">Close</a>
+      </div>
+    </div>
+
+    <div id="goldModal" class="modal">
+      <div class="modal-content">
+        <h3>Gold Membership Benefits</h3>
+        <p>Premium advertising, exclusive events, maximum discounts, and VIP networking.</p>
+        <a href="#" class="close">Close</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-flex">
+      <div class="footer-left">
+        <h4>The Vine Chamber of Commerce</h4>
+        <p>123 Innovation Drive, Effurun</p>
+        <p>Phone: +234 801 234 5678</p>
+        <p><a href="https://deltatech.com" target="_blank">Visit Website</a></p>
+        <p>Membership Level: Gold</p>
+      </div>
+
+      <div class="footer-center">
+        <a href="#"><img src="images/facebook.png" alt="Facebook" /></a>
+        <a href="#"><img src="images/twitter.png" alt="Twitter" /></a>
+        <a href="#"><img src="images/linkedin.png" alt="LinkedIn" /></a>
+      </div>
+
+      <div class="footer-right">
+        <div class="personal-info">
+          <p>Frontend Developer & UI Designer</p>
+          <p>GitHub: <a href="https://github.com/DivineNwokedi">github.com/DivineNwokedi</a></p>
+          <p>LinkedIn: <a href="https://linkedin.com/in/divinenwokedi">linkedin.com/in/divinenwokedi</a></p>
+          <p>WD0231 Class Project | Divine</p>
+          <p>&copy; <span id="year"></span> | Last Modified: <span id="lastModified"></span></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="scripts/directory.js" defer></script>
+</body>
+</html>
