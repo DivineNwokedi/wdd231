@@ -101,3 +101,30 @@ window.addEventListener("click", (e) => {
     }
   });
 });
+// === Visitor Message for Discover Page ===
+(function showVisitMessage() {
+  const key = "discover-last-visit";
+  const container = document.getElementById("visit-message");
+  if (!container) return;
+
+  const now = Date.now();
+  const last = localStorage.getItem(key);
+
+  if (!last) {
+    container.textContent = "Welcome! Let us know if you have any questions.";
+    localStorage.setItem(key, String(now));
+    return;
+  }
+
+  const diffMs = now - Number(last);
+  const diffDays = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+
+  if (diffDays < 1) {
+    container.textContent = "Back so soon! Awesome!";
+  } else {
+    const unit = diffDays === 1 ? "day" : "days";
+    container.textContent = `You last visited ${diffDays} ${unit} ago.`;
+  }
+
+  localStorage.setItem(key, String(now));
+})();
