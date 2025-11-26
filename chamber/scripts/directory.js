@@ -61,3 +61,43 @@ const navMenu = document.getElementById("nav-menu");
 toggleButton.addEventListener("click", () => {
   navMenu.classList.toggle("show");
 });
+
+// === Timestamp Auto-fill for Join Form ===
+document.addEventListener("DOMContentLoaded", () => {
+  const ts = document.getElementById("timestamp");
+  if (ts) {
+    ts.value = new Date().toISOString();
+  }
+});
+
+// === Modal Functionality for Membership Cards ===
+const openButtons = document.querySelectorAll(".open-modal");
+const closeButtons = document.querySelectorAll(".close-modal");
+const modals = document.querySelectorAll(".modal");
+
+openButtons.forEach(btn => {
+  btn.addEventListener("click", () => {
+    const modalId = btn.getAttribute("data-modal");
+    const modal = document.getElementById(modalId);
+    if (modal) {
+      modal.style.display = "flex"; // show modal
+    }
+  });
+});
+
+closeButtons.forEach(btn => {
+  btn.addEventListener("click", () => {
+    modals.forEach(modal => {
+      modal.style.display = "none"; // hide all modals
+    });
+  });
+});
+
+// Close modal when clicking outside of modal content
+window.addEventListener("click", (e) => {
+  modals.forEach(modal => {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+});
