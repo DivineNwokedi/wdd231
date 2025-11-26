@@ -1,24 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Discover Effurun and Warri — local attractions, culture, and places of interest for The Vine Chamber of Commerce." />
-  <meta name="author" content="Divine Nwokedi" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Discover | The Vine Chamber of Commerce</title>
-  <link rel="icon" href="images/favicon.ico" />
-  <link rel="stylesheet" href="styles/normalise.css" />
-  <link rel="stylesheet" href="styles/directory.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap" rel="stylesheet" />
+  <meta name="description" content="Discover Effurun and Warri — local attractions, culture, and places of interest for The Vine Chamber of Commerce.">
+  <meta name="author" content="Divine Nwokedi">
+  <link rel="icon" href="images/favicon.ico">
+
+  <!-- Open Graph tags -->
+  <meta property="og:title" content="Discover Effurun & Warri | The Vine Chamber of Commerce">
+  <meta property="og:description" content="Explore Effurun and Warri — attractions, culture, and places of interest with The Vine Chamber of Commerce.">
+  <meta property="og:image" content="https://divinenwokedi.github.io/wdd231/chamber/images/hero.webp">
+  <meta property="og:url" content="https://divinenwokedi.github.io/wdd231/chamber/discover.html">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles/normalise.css">
+  <link rel="stylesheet" href="styles/directory.css">
+
+  <!-- JS -->
   <script type="module" src="scripts/discover.js" defer></script>
 </head>
 <body>
   <header>
     <div class="header-container">
       <div class="logo-title">
-        <img src="images/logo.svg" alt="Vine Chamber Logo" class="logo" />
+        <img src="images/logo.svg" alt="Vine Chamber Logo" class="logo">
         <h1 class="site-title">The Vine Chamber of Commerce</h1>
       </div>
       <nav>
@@ -36,13 +48,15 @@
   </header>
 
   <section class="hero-image">
-    <img src="images/hero.webp" alt="Effurun and Warri cityscape" />
+    <img src="images/hero.webp" alt="Effurun and Warri cityscape">
     <div class="hero-overlay">
       <h2>Discover Effurun & Warri</h2>
     </div>
   </section>
 
   <main>
+    <h1>Discover Effurun & Warri</h1>
+
     <section id="visit-message" class="panel visit-message" aria-live="polite"></section>
 
     <section class="panel">
@@ -50,7 +64,9 @@
       <p>Explore local culture, commerce, and places that make Effurun & Warri an exciting hub for business and community.</p>
     </section>
 
-    <section id="directory-grid" class="directory-grid"></section>
+    <section id="directory-grid" class="discover-grid" aria-label="Discover grid">
+      <!-- Cards injected by scripts/discover.js -->
+    </section>
   </main>
 
   <footer>
@@ -63,9 +79,9 @@
         <p>Membership Level: Gold</p>
       </div>
       <div class="footer-center">
-        <a href="#"><img src="images/facebook.png" alt="Facebook" /></a>
-        <a href="#"><img src="images/twitter.png" alt="Twitter" /></a>
-        <a href="#"><img src="images/linkedin.png" alt="LinkedIn" /></a>
+        <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+        <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
       </div>
       <div class="footer-right">
         <div class="personal-info">

@@ -93,7 +93,7 @@ nav {
 }
 
 .cta {
-  background-color: #cc6600; /* Improved contrast */
+  background-color: #cc6600;
   color: white;
   border: none;
   padding: 0.75rem 1.5rem;
@@ -410,7 +410,7 @@ input[type="submit"]:hover {
 
 /* === Modal Styling === */
 .modal {
-  display: none; /* hidden by default */
+  display: none;
   position: fixed;
   z-index: 1000;
   left: 0; top: 0;
@@ -443,7 +443,17 @@ input[type="submit"]:hover {
   background-color: #0055aa;
 }
 
-/* === Discover Page Grid Layout === */
+/* === Discover Page Specific Styles === */
+
+/* Visitor message */
+.visit-message {
+  font-weight: 600;
+  color: #003366;
+  text-align: center;
+  margin: 1rem auto;
+}
+
+/* Discover grid using grid-template-areas */
 .discover-grid {
   display: grid;
   gap: 1rem;
@@ -490,7 +500,7 @@ input[type="submit"]:hover {
   }
 }
 
-/* Grid-area hooks for 8 items */
+/* Grid-area hooks */
 .item-a { grid-area: a; }
 .item-b { grid-area: b; }
 .item-c { grid-area: c; }
@@ -500,7 +510,7 @@ input[type="submit"]:hover {
 .item-g { grid-area: g; }
 .item-h { grid-area: h; }
 
-/* === Discover Cards === */
+/* Card base for discover */
 .discover-grid .card {
   background-color: #fff;
   border: 1px solid #ccc;
@@ -509,18 +519,29 @@ input[type="submit"]:hover {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  text-align: left;
+  align-items: flex-start;
+}
+
+.discover-grid .card h2,
+.discover-grid .card address,
+.discover-grid .card p,
+.discover-grid .card .actions {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  text-align: left;
 }
 
 .discover-grid .card h2 {
   font-size: 1.1rem;
-  margin: 0.75rem 1rem 0;
+  margin-top: 0.75rem;
   color: #003366;
 }
 
 .discover-grid .card figure {
-  margin: 0;
-  width: 100%;
-  aspect-ratio: 3 / 2; /* keeps ~300x200 proportions */
+  margin: 0 1rem;
+  width: calc(100% - 2rem);
+  aspect-ratio: 3 / 2;
   overflow: hidden;
 }
 
@@ -534,16 +555,17 @@ input[type="submit"]:hover {
 .discover-grid .card address {
   font-style: normal;
   color: #555;
-  margin: 0.5rem 1rem;
+  margin-top: 0.5rem;
 }
 
 .discover-grid .card p {
-  margin: 0.5rem 1rem 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
   color: #333;
 }
 
 .discover-grid .card .actions {
-  margin: 0 1rem 1rem;
+  margin-bottom: 1rem;
 }
 
 .discover-grid .card .actions .btn {
@@ -556,7 +578,7 @@ input[type="submit"]:hover {
   font-weight: 600;
 }
 
-/* === Hover Effects (medium+ only) === */
+/* Hover effects (medium+ only) */
 @media (min-width: 641px) {
   .discover-grid .card figure img {
     transition: transform 250ms ease, filter 250ms ease;
@@ -565,38 +587,4 @@ input[type="submit"]:hover {
     transform: scale(1.03);
     filter: contrast(1.05) saturate(1.05);
   }
-}
-
-/* === Visitor Message Styling === */
-.visit-message {
-  font-weight: 600;
-  color: #003366;
-  text-align: center;
-  margin: 1rem auto;
-}
-
-/* Force left alignment inside discover cards */
-.discover-grid .card {
-  text-align: left;       /* ensures text aligns left */
-  align-items: flex-start; /* for flex layout, keeps children left-aligned */
-}
-
-.discover-grid .card h2,
-.discover-grid .card address,
-.discover-grid .card p,
-.discover-grid .card .actions {
-  margin-left: 1rem;      /* consistent left margin */
-  margin-right: 1rem;     /* optional right margin for balance */
-  text-align: left;
-}
-
-.discover-grid .card figure {
-  margin: 0 1rem;         /* image also aligns with text margins */
-}
-
-.discover-grid .card figure img {
-  display: block;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
 }
