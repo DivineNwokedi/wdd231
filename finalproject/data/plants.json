@@ -1,0 +1,137 @@
+[
+  {
+    "name": "Basil",
+    "type": "Herb",
+    "watering": "Moderate",
+    "sunlight": "6–8 hours of direct sun",
+    "uses": "Cooking, especially Italian dishes",
+    "difficulty": "Easy",
+    "image": "images/basil.webp"
+  },
+  {
+    "name": "Mint",
+    "type": "Herb",
+    "watering": "High",
+    "sunlight": "Partial shade to full sun",
+    "uses": "Teas, desserts, and fresh garnish",
+    "difficulty": "Easy",
+    "image": "images/mint.webp"
+  },
+  {
+    "name": "Rosemary",
+    "type": "Herb",
+    "watering": "Low",
+    "sunlight": "Full sun",
+    "uses": "Cooking, aromatherapy, ornamental",
+    "difficulty": "Moderate",
+    "image": "images/rosemary.webp"
+  },
+  {
+    "name": "Tomato",
+    "type": "Vegetable",
+    "watering": "High",
+    "sunlight": "Full sun, 6–10 hours daily",
+    "uses": "Salads, sauces, stews",
+    "difficulty": "Moderate",
+    "image": "images/tomato.webp"
+  },
+  {
+    "name": "Lettuce",
+    "type": "Vegetable",
+    "watering": "Moderate",
+    "sunlight": "Partial sun",
+    "uses": "Salads, wraps, sandwiches",
+    "difficulty": "Easy",
+    "image": "images/lettuce.webp"
+  },
+  {
+    "name": "Spinach",
+    "type": "Vegetable",
+    "watering": "Moderate",
+    "sunlight": "Partial shade",
+    "uses": "Smoothies, salads, cooking",
+    "difficulty": "Easy",
+    "image": "images/spinach.webp"
+  },
+  {
+    "name": "Cucumber",
+    "type": "Vegetable",
+    "watering": "High",
+    "sunlight": "Full sun",
+    "uses": "Salads, pickles, fresh eating",
+    "difficulty": "Moderate",
+    "image": "images/cucumber.webp"
+  },
+  {
+    "name": "Carrot",
+    "type": "Root",
+    "watering": "Moderate",
+    "sunlight": "Full sun",
+    "uses": "Cooking, salads, juicing",
+    "difficulty": "Easy",
+    "image": "images/carrot.webp"
+  },
+  {
+    "name": "Radish",
+    "type": "Root",
+    "watering": "Moderate",
+    "sunlight": "Full sun",
+    "uses": "Salads, pickling",
+    "difficulty": "Easy",
+    "image": "images/radish.webp"
+  },
+  {
+    "name": "Strawberry",
+    "type": "Fruit",
+    "watering": "High",
+    "sunlight": "Full sun",
+    "uses": "Desserts, smoothies, fresh eating",
+    "difficulty": "Moderate",
+    "image": "images/strawberry.webp"
+  },
+  {
+    "name": "Blueberry",
+    "type": "Fruit",
+    "watering": "High",
+    "sunlight": "Full sun",
+    "uses": "Desserts, jams, fresh eating",
+    "difficulty": "Moderate",
+    "image": "images/blueberry.webp"
+  },
+  {
+    "name": "Lavender",
+    "type": "Flower",
+    "watering": "Low",
+    "sunlight": "Full sun, dry soil",
+    "uses": "Aromatherapy, decoration, pollinator-friendly",
+    "difficulty": "Easy",
+    "image": "images/lavender.webp"
+  },
+  {
+    "name": "Sunflower",
+    "type": "Flower",
+    "watering": "Moderate",
+    "sunlight": "Full sun",
+    "uses": "Seeds, decoration, pollinator-friendly",
+    "difficulty": "Easy",
+    "image": "images/sunflower.webp"
+  },
+  {
+    "name": "Aloe Vera",
+    "type": "Succulent",
+    "watering": "Low",
+    "sunlight": "Indirect bright light",
+    "uses": "Medicinal, skincare",
+    "difficulty": "Easy",
+    "image": "images/aloe.webp"
+  },
+  {
+    "name": "Snake Plant",
+    "type": "Succulent",
+    "watering": "Low",
+    "sunlight": "Low to bright indirect light",
+    "uses": "Air purification, ornamental",
+    "difficulty": "Easy",
+    "image": "images/snakeplant.webp"
+  }
+]
